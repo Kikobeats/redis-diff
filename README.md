@@ -41,10 +41,10 @@ diff.compare({
   id: 'foo'
 }, console.log)
 
-// { 
+// {
 //   added: [ { foo: 'baarz' }, { foo: 'bax' } ],
 //   removed: [ { foo: 'barz' }, { foo: 'baaz' } ],
-//   common: [ { foo: 'bar' } ] 
+//   common: [ { foo: 'bar' } ]
 // }
 ```
 
