@@ -1,3 +1,10 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2017-01-03)
+
+* Use hyperdiff dep ([e2c4593](https://github.com/kikobeats/redis-diff/commit/e2c4593))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2017-01-02)
 
