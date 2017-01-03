@@ -1,7 +1,7 @@
 'use strict'
 
-const arrayDiff = require('simple-array-diff')
 const json = require('json-future')
+const diff = require('hyperdiff')
 const redis = require('redis')
 
 const exists = (val) => val != null
@@ -39,7 +39,7 @@ function createDiff (opts) {
 
     get({key}, function (err, data) {
       if (err) return cb(err)
-      return cb(null, arrayDiff(data, value, id))
+      return cb(null, diff(data, value, id))
     })
   }
 

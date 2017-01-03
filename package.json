@@ -22,9 +22,9 @@
     "diff"
   ],
   "dependencies": {
+    "hyperdiff": "~1.0.0",
     "json-future": "~2.0.1",
-    "redis": "~2.6.3",
-    "simple-array-diff": "~1.1.0"
+    "redis": "~2.6.3"
   },
   "devDependencies": {
     "coveralls": "latest",
