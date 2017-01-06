@@ -1,3 +1,11 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2017-01-06)
+
+* Avoid run test locally ([dd09b97](https://github.com/kikobeats/redis-diff/commit/dd09b97))
+* Handle empty get ([57815d7](https://github.com/kikobeats/redis-diff/commit/57815d7))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2017-01-03)
 
