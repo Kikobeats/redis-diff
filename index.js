@@ -27,6 +27,7 @@ function createDiff (opts) {
 
     client.get(key, function (err, value) {
       if (err) return cb(err)
+      if (!exists(value)) return cb(null, [])
       return json.parseAsync(value, cb)
     })
   }
