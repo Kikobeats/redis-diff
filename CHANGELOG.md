@@ -1,3 +1,10 @@
+<a name="1.0.3"></a>
+## 1.0.3 (2017-01-17)
+
+* Expose client ([70784ec](https://github.com/kikobeats/redis-diff/commit/70784ec))
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2017-01-06)
 
