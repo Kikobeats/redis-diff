@@ -44,7 +44,7 @@ function createDiff (opts) {
     })
   }
 
-  return {set, get, compare}
+  return {set, get, compare, client}
 }
 
 module.exports = createDiff
