@@ -8,7 +8,7 @@
 [![NPM Status](https://img.shields.io/npm/dm/redis-diff.svg?style=flat-square)](https://www.npmjs.org/package/redis-diff)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
-> Perform a diff comparison backed by redis.
+> Perform a difference comparison backed by redis.
 
 ## Install
 
@@ -25,26 +25,26 @@ const noop = () => {}
 diff.set({
   key: 'mykey',
   value: [
-    {foo: 'bar'},
-    {foo: 'barz'},
-    {foo: 'baaz'}
+    {id: 1, foo: 'bar'},
+    {id: 1, foo: 'barz'},
+    {id: 1, foo: 'baaz'}
   ]
 }, noop)
 
 diff.compare({
   key: 'mykey',
   value: [
-    {foo: 'bar'},
-    {foo: 'baarz'},
-    {foo: 'bax'}
+    {id: 1, foo: 'bar'},
+    {id: 1, foo: 'baarz'},
+    {id: 1, foo: 'bax'}
   ],
-  id: 'foo'
+  ids: ['id', 'foo']
 }, console.log)
 
 // {
-//   added: [ { foo: 'baarz' }, { foo: 'bax' } ],
-//   removed: [ { foo: 'barz' }, { foo: 'baaz' } ],
-//   common: [ { foo: 'bar' } ]
+//   added: [ { id: 1, foo: 'baarz' }, { id: 1, foo: 'bax' } ],
+//   removed: [ { id: 1, foo: 'barz' }, { id: 1, foo: 'baaz' } ],
+//   common: [ { id: 1, foo: 'bar' } ]
 // }
 ```
 

@@ -5,14 +5,14 @@ const createDiff = require('..')
 
 const FIXTURE = {
   FIRST: [
-    {foo: 'bar'},
-    {foo: 'barz'},
-    {foo: 'baaz'}
+    {id: 1, foo: 'bar'},
+    {id: 1, foo: 'barz'},
+    {id: 1, foo: 'baaz'}
   ],
   SECOND: [
-    {foo: 'bar'},
-    {foo: 'baarz'},
-    {foo: 'bax'}
+    {id: 1, foo: 'bar'},
+    {id: 1, foo: 'baarz'},
+    {id: 1, foo: 'bax'}
   ]
 }
 
@@ -44,13 +44,12 @@ describe('redis-diff', function () {
     diff.compare({
       key: 'mykey',
       value: FIXTURE.SECOND,
-      id: 'foo'
+      ids: ['id', 'foo']
     }, function (err, result) {
-      console.log(result)
       should(err).be.null()
-      result.added.should.be.eql([{ foo: 'baarz' }, { foo: 'bax' }])
-      result.removed.should.be.eql([{ foo: 'barz' }, { foo: 'baaz' }])
-      result.common.should.be.eql([{ foo: 'bar' }])
+      result.added.should.be.eql([{ id: 1, foo: 'baarz' }, { id: 1, foo: 'bax' }])
+      result.removed.should.be.eql([{ id: 1, foo: 'barz' }, { id: 1, foo: 'baaz' }])
+      result.common.should.be.eql([{ id: 1, foo: 'bar' }])
       done()
     })
   })

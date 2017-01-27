@@ -33,14 +33,14 @@ function createDiff (opts) {
   }
 
   function compare (opts, cb = noop) {
-    const {key, value, id} = opts
+    const {key, value, ids} = opts
     if (!exists(key)) return cb(TypeError('Need to provide a key.'))
     if (!exists(value)) return cb(TypeError('Need to provide a value.'))
-    if (!exists(id)) return cb(TypeError('Need to provide a id.'))
+    if (!exists(ids)) return cb(TypeError('Need to provide a id.'))
 
     get({key}, function (err, data) {
       if (err) return cb(err)
-      return cb(null, diff(data, value, id))
+      return cb(null, diff(data, value, ids))
     })
   }
 

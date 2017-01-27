@@ -18,11 +18,15 @@
   },
   "keywords": [
     "array",
+    "collection",
+    "compare",
     "diff",
+    "difference",
+    "memory",
     "redis"
   ],
   "dependencies": {
-    "hyperdiff": "~1.0.0",
+    "hyperdiff": "~2.0.1",
     "json-future": "~2.0.1",
     "redis": "~2.6.3"
   },
