@@ -1,3 +1,10 @@
+<a name="2.0.1"></a>
+## 2.0.1 (2017-02-15)
+
+* Update hyperdiff dependency ([359e0d5](https://github.com/kikobeats/redis-diff/commit/359e0d5))
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2017-01-27)
 
