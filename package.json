@@ -28,7 +28,7 @@
   "dependencies": {
     "hyperdiff": "~2.0.2",
     "json-future": "~2.0.1",
-    "redis": "~2.6.3"
+    "redis": "~2.7.0"
   },
   "devDependencies": {
     "coveralls": "latest",
