@@ -1,5 +1,7 @@
 # redis-diff
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/redis-diff.svg)](https://greenkeeper.io/)
+
 ![Last version](https://img.shields.io/github/tag/Kikobeats/redis-diff.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/redis-diff/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/redis-diff)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/redis-diff.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/redis-diff)
