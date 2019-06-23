@@ -1,3 +1,20 @@
+<a name="2.0.2"></a>
+## 2.0.2 (2019-06-23)
+
+* build: tweaks ([005a556](https://github.com/kikobeats/redis-diff/commit/005a556))
+* build: update dependencies ([604d13c](https://github.com/kikobeats/redis-diff/commit/604d13c))
+* fix(package): update json-future to version 2.2.0 ([ffc29ec](https://github.com/kikobeats/redis-diff/commit/ffc29ec))
+* fix(package): update redis to version 2.8.0 ([3338eea](https://github.com/kikobeats/redis-diff/commit/3338eea))
+* Force mocha exit ([127f595](https://github.com/kikobeats/redis-diff/commit/127f595))
+* Update README.md ([de5f197](https://github.com/kikobeats/redis-diff/commit/de5f197))
+* Update README.md ([c6f1d05](https://github.com/kikobeats/redis-diff/commit/c6f1d05))
+* docs(readme): add Greenkeeper badge ([4d42bb8](https://github.com/kikobeats/redis-diff/commit/4d42bb8))
+* docs(readme): add Greenkeeper badge ([6d60c51](https://github.com/kikobeats/redis-diff/commit/6d60c51))
+* chore(package): update json-future to version 2.1.0 ([68bd475](https://github.com/kikobeats/redis-diff/commit/68bd475))
+* chore(package): update redis to version 2.7.0 ([4ec86ba](https://github.com/kikobeats/redis-diff/commit/4ec86ba))
+
+
+
 <a name="2.0.1"></a>
 ## 2.0.1 (2017-02-15)
 
