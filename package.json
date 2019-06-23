@@ -1,7 +1,7 @@
 {
   "name": "redis-diff",
   "description": "Perform a diff comparison backed by redis.",
-  "homepage": "https://github.com/Kikobeats/redis-diff",
+  "homepage": "https://nicedoc.io/Kikobeats/redis-diff",
   "version": "2.0.1",
   "main": "index.js",
   "author": {

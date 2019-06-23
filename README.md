@@ -25,18 +25,18 @@ const noop = () => {}
 diff.set({
   key: 'mykey',
   value: [
-    {id: 1, foo: 'bar'},
-    {id: 1, foo: 'barz'},
-    {id: 1, foo: 'baaz'}
+    { id: 1, foo: 'bar' },
+    { id: 1, foo: 'barz' },
+    { id: 1, foo: 'baaz' }
   ]
 }, noop)
 
 diff.compare({
   key: 'mykey',
   value: [
-    {id: 1, foo: 'bar'},
-    {id: 1, foo: 'baarz'},
-    {id: 1, foo: 'bax'}
+    { id: 1, foo: 'bar' },
+    { id: 1, foo: 'baarz' },
+    { id: 1, foo: 'bax' }
   ],
   ids: ['id', 'foo']
 }, console.log)

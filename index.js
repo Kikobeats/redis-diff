@@ -4,14 +4,14 @@ const json = require('json-future')
 const diff = require('hyperdiff')
 const redis = require('redis')
 
-const exists = (val) => val != null
+const exists = val => val != null
 const noop = () => {}
 
 function createDiff (opts) {
   const client = redis.createClient(opts)
 
   function set (opts, cb = noop) {
-    const {key, value} = opts
+    const { key, value } = opts
     if (!exists(key)) return cb(TypeError('Need to provide a key.'))
     if (!exists(value)) return cb(TypeError('Need to provide a value.'))
 
@@ -22,7 +22,7 @@ function createDiff (opts) {
   }
 
   function get (opts, cb = noop) {
-    const {key} = opts
+    const { key } = opts
     if (!exists(key)) return cb(TypeError('Need to provide a key.'))
 
     client.get(key, function (err, value) {
@@ -33,18 +33,18 @@ function createDiff (opts) {
   }
 
   function compare (opts, cb = noop) {
-    const {key, value, ids} = opts
+    const { key, value, ids } = opts
     if (!exists(key)) return cb(TypeError('Need to provide a key.'))
     if (!exists(value)) return cb(TypeError('Need to provide a value.'))
     if (!exists(ids)) return cb(TypeError('Need to provide a id.'))
 
-    get({key}, function (err, data) {
+    get({ key }, function (err, data) {
       if (err) return cb(err)
       return cb(null, diff(data, value, ids))
     })
   }
 
-  return {set, get, compare, client}
+  return { set, get, compare, client }
 }
 
 module.exports = createDiff
