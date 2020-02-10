@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - "stable"
-  - "6"
+  - lts/*
+  - node
 services:
   - redis-server
 after_success: npm run coveralls
