@@ -1,3 +1,9 @@
+## 3.0.0 (2020-02-10)
+
+* build: update dependencies ([4b06aa0](https://github.com/kikobeats/redis-diff/commit/4b06aa0))
+
+
+
 <a name="2.0.2"></a>
 ## 2.0.2 (2019-06-23)
 

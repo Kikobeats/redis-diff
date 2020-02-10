@@ -2,7 +2,7 @@
   "name": "redis-diff",
   "description": "Perform a diff comparison backed by redis.",
   "homepage": "https://nicedoc.io/Kikobeats/redis-diff",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "main": "index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
